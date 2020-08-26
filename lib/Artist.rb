@@ -1,8 +1,10 @@
 class Artist
- extend Concerns::Findable
+ 
 
   attr_accessor :name
   attr_reader :songs
+  
+  extend Concerns::Findable
   
   # empty array to hold artists
   @@all = []
